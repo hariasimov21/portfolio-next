@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 // app/components/About.jsx (o donde prefieras)
 export default function About() {
   return (
@@ -145,7 +147,9 @@ export default function About() {
 
 /* ---------- Pequeños componentes UI sin dependencias ---------- */
 
-function Card({ children }) {
+// ⬇️ TIPAR children
+type CardProps = { children: ReactNode };
+function Card({ children }: CardProps) {
   return (
     <div className="rounded-2xl border border-zinc-200 bg-white/70 p-6 shadow-sm backdrop-blur dark:bg-zinc-900/60 dark:border-zinc-800">
       {children}
@@ -153,7 +157,9 @@ function Card({ children }) {
   );
 }
 
-function Chip({ label }) {
+// ⬇️ TIPAR label
+type ChipProps = { label: string };
+function Chip({ label }: ChipProps) {
   return (
     <span className="rounded-full border border-zinc-200 px-3 py-1 text-xs font-medium text-zinc-700 dark:text-zinc-300 dark:border-zinc-800">
       {label}
@@ -161,7 +167,9 @@ function Chip({ label }) {
   );
 }
 
-function Fact({ icon, text }) {
+// ⬇️ TIPAR icon y text
+type FactProps = { icon: ReactNode; text: string };
+function Fact({ icon, text }: FactProps) {
   return (
     <li className="flex items-start gap-3">
       <span className="mt-0.5">{icon}</span>
