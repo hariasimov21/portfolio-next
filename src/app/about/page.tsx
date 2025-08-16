@@ -1,6 +1,14 @@
 import { ReactNode } from "react";
 
+
 // app/components/About.jsx (o donde prefieras)
+
+export const metadata = {
+  title: "Sobre mí - Jaime Díaz",
+  description: "Conoce más sobre Jaime Díaz, su experiencia y proyectos en desarrollo backend e inteligencia artificial.",
+  keywords: ["Jaime Díaz", "Desarrollador Backend", "IA aplicada", "NestJS", "PostgreSQL", "Docker"],
+};
+
 export default function About() {
   return (
     <section

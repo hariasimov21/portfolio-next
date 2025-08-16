@@ -1,3 +1,10 @@
+
+export const metadata = {
+  title: "Skills - Jaime Díaz",
+  description: "Aquí encontrarás una selección de mis habilidades como desarrollador backend e inteligencia artificial.",
+  keywords: ["Jaime Díaz", "Desarrollador Backend", "IA aplicada", "NestJS", "PostgreSQL", "Docker"],
+};
+
 export default function SkillsPage() {
   const skills = [
     { name: "NestJS", category: "Backend" },

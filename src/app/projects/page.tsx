@@ -1,3 +1,10 @@
+
+export const metadata = {
+  title: "Proyectos - Jaime Díaz",
+  description: "Aquí encontrarás una selección de mis proyectos como desarrollador backend e iniciativas en inteligencia artificial.",
+  keywords: ["Jaime Díaz", "Desarrollador Backend", "IA aplicada", "NestJS", "PostgreSQL", "Docker"],
+};
+
 export default function ProjectsPage() {
   return (
     <section className="container mx-auto px-4 py-16">
